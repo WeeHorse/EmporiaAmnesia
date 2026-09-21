@@ -1,0 +1,4 @@
+class CorridorA : Location
+{
+
+}

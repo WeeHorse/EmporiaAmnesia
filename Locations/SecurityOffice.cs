@@ -1,0 +1,4 @@
+class SecurityOffice : Location
+{
+
+}
