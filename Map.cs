@@ -16,5 +16,28 @@ class Map
   }
 
 
+  public bool PositionExists(int row, int col)
+  {
+
+    if (row < 0 || row >= locations.Length) // is row out of bounds?
+    {
+      return false;
+    }
+
+    if (col < 0 || col >= locations[row].Length) // is col out of bounds?
+    {
+      return false;
+    }
+
+    if (locations[row][col] == null) // is position on a null "cell"?
+    {
+      return false;
+    }
+
+    return true;
+
+  }
+
+
 
 }
